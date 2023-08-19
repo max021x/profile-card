@@ -1,0 +1,128 @@
+  @import url('https://fonts.googleapis.com/css2?family=Pathway+Extreme:wght@100&family=Poppins:wght@400;500;600&family=Roboto:wght@100&display=swap');
+  
+  /* <i class="fa fa-heart-o" aria-hidden="true"></i> */
+  /* <i class="fa fa-comment-o" aria-hidden="true"></i>  */
+  /* <i class="fa fa-reply" aria-hidden="true"></i> */
+  
+  *{
+      margin: 0 ;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins',sans-serif;
+}
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f4f4f4;
+}
+.profile-card{
+     max-width: 370px;
+     width: 100%;
+     background-color: #fff;
+     box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+     border-radius: 24px;
+     padding: 25px;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     position: relative;
+}
+.profile-card::before{
+         content: "";
+         position: absolute;
+         top: 0;
+         left: 0;
+         height: 36%;
+         width: 100%;
+         background-color:#0077ff ;
+         border-radius: 24px 24px 0 0;
+        }
+.image{
+   position: relative;
+   width: 150px;
+   height: 150px;
+   background: #0077ff;
+   border-radius: 50%;
+   padding: 3px;
+}
+.image .profile-image{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid #fff;
+}
+.profile-card .text-data{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.text-data .name {
+    font-size: 1.3rem;
+    font-weight: 500;
+}
+.text-data .job {
+    font-size: 1.1rem;
+    font-weight: 400;
+}
+.profile-card .media{
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+}
+.media .link{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 34px;
+    width: 34px;
+    border-radius: 50%;
+    margin: 0 8px;
+    text-decoration: none;
+    background-color: red;
+    color: #fff;
+    font-size: 1.1rem;
+}
+.profile-card .btn-wrapper{
+     display: flex;
+     align-items: center;
+     margin-top: 20px;
+}
+.btn-wrapper .buttons{
+    padding:  8px 24px;
+    margin: 0 10px;
+    border-radius: 24px;
+    background-color: #0077ff; 
+    border: none;
+    color: #fff;
+    font-size: 0.9rem;
+    font-weight: 400;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.btn-wrapper .buttons:hover{
+    background-color: #0077ffd6;
+}
+.profile-card .analys{
+    display: flex;
+    align-items: center;
+    margin-top: 25px;
+
+}
+.analys .data{
+    display: flex;
+    align-items: center;
+    color: #333;
+    padding: 0 20px;
+    border-right: solid 2px #c8c8c8e7;
+}
+.data:last-child{
+    border-right: none;
+}
+.data i {
+    font-size: 18px ;
+    margin-right: 6px;
+}
